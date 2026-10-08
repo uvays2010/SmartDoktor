@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="media/favicon.png">
+  <title>SmartDoktor — bosh sahifa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="loader" id="loader" role="status" aria-live="polite">
+    <div class="loader-box">
+      <img src="media/logo.gif" alt="">
+      <strong>SmartDoktor</strong>
+      <span>Yuklanmoqda...</span>
+      <i></i>
+    </div>
+  </div>
+    <div class="topbar"><div class="container topbar-row"><span>SmartDoktor · namoyish klinika · tashxis emas</span><span>+998 55 500 52 52</span></div></div>
+  <header class="header"><div class="container nav">
+    <a class="logo" href="index.html"><span class="logo-mark">SD</span> SmartDoktor</a>
+    <button class="menu-btn" id="menuBtn" type="button">Menyu</button>
+    <nav class="menu" id="menu" aria-label="index.html">        <a href="index.html" class="active">Bosh</a>
+        <a href="haqida.html" class="">Haqida</a>
+        <a href="xizmatlar.html" class="">Xizmatlar</a>
+        <a href="shifokorlar.html" class="">Shifokorlar</a>
+        <a href="laboratoriya.html" class="">Laboratoriya</a>
+        <a href="bolalar.html" class="">Bolalar</a>
+        <a href="narxlar.html" class="">Narxlar</a>
+        <a href="filiallar.html" class="">Filiallar</a>
+        <a href="maqolalar.html" class="">Maqolalar</a>
+        <a href="kabinet.html" class="">Kabinet</a>
+        <a href="aloqa.html" class="">Aloqa</a>
+        <a class="btn" href="kabinet.html">Navbat</a>
+    </nav>
+  </div></header>
+  <div class="subnav"><div class="container subnav-row">
+    <a href="xizmatlar.html?tur=Terapiya">Terapiya</a>
+    <a href="xizmatlar.html?tur=LOR">LOR</a>
+    <a href="bolalar.html">Pediatriya</a>
+    <a href="laboratoriya.html">Tahlil</a>
+    <a href="narxlar.html">Narx</a>
+    <a href="filiallar.html">6 filial</a>
+  </div></div>
+  <main>
+
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">11 sahifa · 36 shifokor · 18 xizmat</span>
+          <h1>SmartDoktor — kuchli raqamli klinika</h1>
+          <p class="lead">Bitta kuchli kirish: video, 3D sahna, shifokorlar, xizmatlar va kabinet. Navbarlar alohida, loading faqat birinchi kirishda.</p>
+          <div class="hero-actions"><a class="btn" href="shifokorlar.html">Shifokorlar</a><a class="btn ghost" href="xizmatlar.html">Xizmatlar</a></div>
+          <div class="pills"><a class="pill" href="xizmatlar.html?tur=Terapiya">Terapiya</a><a class="pill" href="xizmatlar.html?tur=LOR">LOR</a><a class="pill" href="shifokorlar.html?spec=Pediatr">Pediatr</a><a class="pill" href="xizmatlar.html?tur=Laboratoriya">Laboratoriya</a><a class="pill" href="xizmatlar.html?tur=Diagnostika">UZI</a><a class="pill" href="shifokorlar.html?spec=Kardiolog">EKG</a></div>
+        </div>
+        
+        <div class="stage" id="stage" aria-hidden="true">
+          <div class="orbit"></div>
+          <div class="orbit orbit-2"></div>
+          <div class="cube">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="float f1">+</div>
+          <div class="float f2">♥</div>
+          <div class="float f3">UZI</div>
+        </div>
+
+        
+        <div class="media-card">
+          <video class="hero-video" src="media/klinika.mp4" poster="media/klinika.jpg" autoplay muted loop playsinline></video>
+          <img class="gif-badge" src="media/logo.gif" alt="SmartDoktor harakatli belgi">
+        </div>
+
+        <aside class="hero-card tilt" id="openNow"></aside>
+      </div>
+      <div class="container stats">
+        <div class="stat"><b data-count="36">0</b><span>shifokor profili</span></div>
+        <div class="stat"><b data-count="18">0</b><span>xizmat</span></div>
+        <div class="stat"><b data-count="24">0</b><span>maqola</span></div>
+        <div class="stat"><b data-count="11">0</b><span>sahifa</span></div>
+      </div>
+    </section>
+    <section><div class="container"><p class="kicker">Sahifalar</p><h2>Navbar orqali ochiladigan bo'limlar</h2><div class="three" id="homeDepts"></div></div></section>
+    <section class="soft"><div class="container wide">
+      <div><p class="kicker">Qadamlar</p><h2>Qabulgacha yo'l</h2><div class="two">
+        <article class="list-card"><b>1. Yo'nalish</b><p class="muted">Xizmatlar sahifasidan tanlang.</p></article>
+        <article class="list-card"><b>2. Shifokor</b><p class="muted">Shahar va reyting bo'yicha filtr.</p></article>
+        <article class="list-card"><b>3. Vaqt</b><p class="muted">Kabinetda soatni belgilang.</p></article>
+        <article class="list-card"><b>4. Eslatma</b><p class="muted">Sana brauzerda saqlanadi.</p></article>
+      </div></div>
+      <aside class="banner"><h2>Alohida yozilgan menyu</h2><p>Bosh, xizmatlar, shifokorlar, maqolalar, kabinet va aloqa navbarlari har faylda o'zicha turadi.</p></aside>
+    </div></section>
+    <section id="savol"><div class="container"><p class="kicker">Savol-javob</p><h2>Ko'p so'raladigan savollar</h2><div class="faq" id="faq"></div></div></section>
+
+  </main>
+  <footer class="footer">
+    <div class="container foot-grid">
+      <div><strong>SmartDoktor</strong><p>Katta namoyish sayt. Navbar har sahifada alohida yozilgan.</p></div>
+      <div><strong>Sahifalar</strong><a href="index.html">Bosh</a><a href="xizmatlar.html">Xizmatlar</a><a href="shifokorlar.html">Shifokorlar</a></div>
+      <div><strong>Yordam</strong><a href="maqolalar.html">Maqolalar</a><a href="kabinet.html">Kabinet</a><a href="aloqa.html">Aloqa</a></div>
+      <div><strong>Eslatma</strong><p>Sayt tibbiy maslahat emas. Og'ir holatda 103 ga qo'ng'iroq qiling.</p></div>
+    </div>
+    <div class="container bottom">© 2026 SmartDoktor · HTML · CSS · JS</div>
+  </footer>
+  <div class="modal" id="modal"><div class="modal-card"><h3 id="modalTitle">Xabar</h3><p id="modalBody"></p><button class="btn" id="closeModal" type="button">Yopish</button></div></div>
+  <div class="toast" id="toast"></div>
+  <button class="to-top" id="toTop" type="button">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>

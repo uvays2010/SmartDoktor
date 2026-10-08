@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="media/favicon.png">
+  <title>Kabinet — SmartDoktor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar"><div class="container topbar-row"><span>SmartDoktor · namoyish klinika · tashxis emas</span><span>+998 55 500 52 52</span></div></div>
+  <header class="header"><div class="container nav">
+    <a class="logo" href="index.html"><span class="logo-mark">SD</span> SmartDoktor</a>
+    <button class="menu-btn" id="menuBtn" type="button">Menyu</button>
+    <nav class="menu" id="menu" aria-label="kabinet.html">        <a href="index.html" class="">Bosh</a>
+        <a href="haqida.html" class="">Haqida</a>
+        <a href="xizmatlar.html" class="">Xizmatlar</a>
+        <a href="shifokorlar.html" class="">Shifokorlar</a>
+        <a href="laboratoriya.html" class="">Laboratoriya</a>
+        <a href="bolalar.html" class="">Bolalar</a>
+        <a href="narxlar.html" class="">Narxlar</a>
+        <a href="filiallar.html" class="">Filiallar</a>
+        <a href="maqolalar.html" class="">Maqolalar</a>
+        <a href="kabinet.html" class="active">Kabinet</a>
+        <a href="aloqa.html" class="">Aloqa</a>
+        <a class="btn" href="kabinet.html">Navbat</a>
+    </nav>
+  </div></header>
+  <div class="subnav"><div class="container subnav-row">
+    <a href="xizmatlar.html?tur=Terapiya">Terapiya</a>
+    <a href="xizmatlar.html?tur=LOR">LOR</a>
+    <a href="bolalar.html">Pediatriya</a>
+    <a href="laboratoriya.html">Tahlil</a>
+    <a href="narxlar.html">Narx</a>
+    <a href="filiallar.html">6 filial</a>
+  </div></div>
+  <main>
+
+    <section class="page-hero"><div class="container"><p class="kicker">Kabinet navbar</p><h1>Navbat, eslatma va oila</h1></div></section>
+    <section><div class="container split">
+      <form class="card form-grid" id="apptForm"><h3>Yangi navbat</h3><input name="name" placeholder="Ism" required><input name="phone" placeholder="Telefon" required><select name="doctor" id="doctorSelect"></select><input name="date" type="date" required><div class="slots" id="slots"></div><button class="btn" type="submit">Saqlash</button></form>
+      <div><div class="tabs"><button class="tab on" data-tab="appts" type="button">Navbatlar</button><button class="tab" data-tab="notes" type="button">Eslatmalar</button><button class="tab" data-tab="family" type="button">Oila</button></div>
+      <div id="tabAppts"></div>
+      <form class="card form-grid" id="noteForm" hidden><input id="noteTitle" placeholder="Eslatma" required><input id="noteDate" type="date" required><button class="btn" type="submit">Qo'shish</button><ul id="noteList"></ul></form>
+      <form class="card form-grid" id="familyForm" hidden><input id="memberName" placeholder="Oila a'zosi" required><select id="memberRole"><option>Ota</option><option>Ona</option><option>Farzand</option></select><button class="btn" type="submit">Qo'shish</button><ul id="familyList"></ul></form>
+      </div></div><div class="container" style="margin-top:22px"><h2>Hafta</h2><div class="week" id="week"></div></div></section>
+
+  </main>
+  <footer class="footer">
+    <div class="container foot-grid">
+      <div><strong>SmartDoktor</strong><p>Katta namoyish sayt. Navbar har sahifada alohida yozilgan.</p></div>
+      <div><strong>Sahifalar</strong><a href="index.html">Bosh</a><a href="xizmatlar.html">Xizmatlar</a><a href="shifokorlar.html">Shifokorlar</a></div>
+      <div><strong>Yordam</strong><a href="maqolalar.html">Maqolalar</a><a href="kabinet.html">Kabinet</a><a href="aloqa.html">Aloqa</a></div>
+      <div><strong>Eslatma</strong><p>Sayt tibbiy maslahat emas. Og'ir holatda 103 ga qo'ng'iroq qiling.</p></div>
+    </div>
+    <div class="container bottom">© 2026 SmartDoktor · HTML · CSS · JS</div>
+  </footer>
+  <div class="modal" id="modal"><div class="modal-card"><h3 id="modalTitle">Xabar</h3><p id="modalBody"></p><button class="btn" id="closeModal" type="button">Yopish</button></div></div>
+  <div class="toast" id="toast"></div>
+  <button class="to-top" id="toTop" type="button">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
